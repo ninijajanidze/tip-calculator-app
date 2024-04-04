@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/favicon-32x32.png">
+    <title>tip-calculator-app</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+            <img class="logo" src="images/logo.svg" alt="logo picture">
+        <div class="main">
+            <div class="calculator">
+                <h3>Bill</h3>
+                <div class="bill">
+                   <img class="dollar-icon" src="images/icon-dollar.svg" alt="dollar icon">
+                   <input class="bill-input" type="number"
+                   placeholder="0.00">
+                </div>
+                <h3>Select Tip %</h3>
+                <div class="tip">
+                    <button class="tip1 tip-button">5%</button>
+                    <button class="tip2 tip-button">10%</button>
+                    <button class="tip3 tip-button">15%</button>
+                    <button class="tip4 tip-button">25%</button>
+                    <button class="tip5 tip-button">50%</button>
+                    <input class="input-tip" type="number" placeholder="Custom">
+                </div>
+                <div class="people-number">
+                <h3>Number of People</h3>
+                <h6 class="error">Can’t be zero</h6>
+                </div>
+                <div class="people">
+                    <img class="person" src="images/icon-person.svg" alt="person icon">
+                    <input class="people-input" type="number"
+                    placeholder="0">
+                </div>
+            </div>
+            <div class="result">
+                <div class="amount">
+                    <h4>Tip Amount <br> <span class="person-span">/ person</span></h4>
+                    <h5>$<span class="amount-span">0.00</span></h5>
+                </div>
+                <div class="total">
+                    <h4>Total <br> <span class="person-span2">/ person</span></h4>
+                    <h5>$<span class="total-span">0.00</span></h5>
+                </div>
+                <button class="reset-button" onclick="resetButton()">RESET</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

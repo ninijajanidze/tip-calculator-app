@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 375px;
+    background-color: #c5e4e7;
+}
+
+.logo {
+    width: 86.7px;
+    height: 53.1px;
+    margin: 50px 144px;
+}
+
+.main {
+    position: relative;
+    width: 375px;
+    padding: 32px 24px;
+    box-shadow: 0 32px 43px 0 rgba(79, 166, 175, 0.2);
+    background-color: #fff; 
+    border-radius: 25px 25px 0 0;
+}
+
+.calculator {
+    padding: 0 8px;
+}
+
+h3 {
+    width: 157px;
+    height: 24px;
+    margin: 0;
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: start;
+    color: #5e7a7d;    
+}
+
+.bill-input, .people-input {
+    width: 311px;
+    height: 48px;
+    border: none;
+    margin: 6px 0 32px;
+    padding: 0 18px 0  0;
+    border-radius: 5px;
+    background-color: #f3f9fa; 
+    font-family: Space Mono;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    color: #00474b;
+    cursor: pointer;
+    outline: none;
+}
+
+.bill-input:hover, .people-input:hover, .input-tip:hover {
+    border: solid 2px #26c2ae;
+    background-color: #f3f9fa;
+}
+
+.bill, .people {
+    position: relative;  
+}
+
+input.bill-input[type="number"]::-webkit-inner-spin-button,
+input.bill-input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input.input-tip[type="number"]::-webkit-inner-spin-button,
+input.input-tip[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input.people-input[type="number"]::-webkit-inner-spin-button,
+input.people-input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.dollar-icon {
+    position: absolute;
+    z-index: 1;
+    width: 13px;
+    height: 18px;
+    opacity: 0.65;
+    margin-top: 22px;
+    margin-left: 19.3px;
+}
+
+.bill-input::placeholder {
+    position: absolute;
+    opacity: 0.35;
+    margin-left: 235px;
+}
+
+.people-input::placeholder {
+    position: absolute;
+    opacity: 0.35;
+    margin-left: 278px;
+}
+
+.person {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.65;
+    margin-top: 20px;
+    margin-left: 19.3px;
+}
+
+.tip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding: 16px 0 32px;
+}
+
+.tip-button {
+    width: 146.6px;
+    height: 48px;
+    padding: 6px 17.5px 6px 16.3px;
+    border-radius: 5px;
+    background-color: #00474b;
+    border: none;
+    font-family: Space Mono;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;   
+    cursor: pointer;
+}
+
+.tip-button:hover {
+    background-color: #9fe8df;
+    color: #00474b;;
+}
+
+.input-tip {
+    width: 147.8px;
+    height: 48px;
+    padding: 6px 17.3px 6px 19px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f3f9fa;
+    font-family: Space Mono;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    color: #00474b; 
+    cursor: pointer;
+}
+
+.input-tip::placeholder {
+    width: 111.5px;
+    height: 36px;
+    font-family: Space Mono;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: #547878;
+}
+
+
+.change-color {
+    color: #26c2ae;
+}
+
+.result {
+    width: 327px;
+    height: 257px;
+    padding: 37px 22px 24px 24px;
+    border-radius: 15px;
+    background-color: #00474b;
+}
+
+.amount, .total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.amount {
+    margin-bottom: 20px;
+}
+
+h4 {
+    width: 98px;
+    height: 24px;
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    color: #fff;    
+}
+
+h5, .total-span, .amount-span {
+    width: 140px;
+    height: 47px;
+    margin: 0;
+    font-family: Space Mono;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: -0.67px;
+    text-align: right;
+    color: #26c2ae;
+}
+
+.person-span2, .person-span {
+    width: 64px;
+    height: 19px;
+    margin: 0;
+    font-family: Space Mono;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+    color: #7f9d9f;
+}
+
+.result button {
+    width: 281px;
+    height: 48px;
+    margin: 32px 0 0;
+    border-radius: 5px;
+    background-color: #26c2ae;
+    border: none;
+    font-family: Space Mono;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #00474b; 
+    cursor: pointer;   
+}
+
+.result button:hover {
+    background-color: #9fe8df;
+}
+
+.people-number {
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error {
+    width: 128px;
+    height: 24px;
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+    color: #e17457;
+    display: none;
+}
+
+@media screen and (min-width:1440px) {
+    .container {
+        width: 1440px;
+        background-color: #c5e4e7;
+        padding: 163px 260px 239px;
+    }
+    
+    .logo {
+        width: 86.7px;
+        height: 53.1px;
+        margin: 0 416.3px 87.9px 417px;
+    }
+    
+    .main {
+        position: relative;
+        display: flex;
+        width: 920px;
+        height: 481px;
+        margin: 0;
+        padding: 32px 32px 32px 48px;
+        border-radius: 25px;
+        box-shadow: 0 32px 43px 0 rgba(79, 166, 175, 0.2);
+        background-color: #fff;
+    }
+
+    .calculator {
+        margin-top: 13px;
+        margin-right: 48px;
+        padding: 0;
+    }
+    
+    .bill-input::placeholder {
+        margin-left: 302px;
+    }
+    
+    .people-input::placeholder {
+        margin-left: 347px;
+    }  
+
+    .bill-input {
+        margin-bottom: 40px;
+    }
+
+    .bill-input, .people-input {
+        width: 380px;
+        height: 48px;
+    }
+
+    .bill, .people {
+        position: relative;  
+    }
+
+    .tip {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 16px 14px;
+        padding: 16px 0 40px;
+    }
+    
+    .tip-button {
+        width: 117px;
+        height: 48px;
+        padding: 6px 14px 6px 13px;
+    }
+
+    .input-tip {
+        width: 118px;
+        padding: 6px 14px 0 0; 
+    }
+
+    .result {
+        width: 413px;
+        height: 417px;
+        padding: 40px;
+    }
+    
+    .amount, .total {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .amount {
+        margin-bottom: 25px;
+    }
+    
+    h4 {
+        margin-bottom: 30px;   
+    }
+    
+    h5, .total-span, .amount-span {
+        width: 200px;
+        height: 71px;
+        margin: 0;
+        font-size: 40px;
+        letter-spacing: -1px;
+    }
+    
+    .result button {
+        width: 333px;
+        margin: 122px 0 0;
+        background-color: #0d686d;
+    }
+    
+}
